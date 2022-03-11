@@ -1,0 +1,10 @@
+{
+  "defaultCommandTimeout": 50000,
+  "projectId": "meu_project_id",
+  "retries": {
+    "runMode": 4,
+    "openMode": 3
+  },
+  "viewportWidth": 1920,
+  "viewportHeight": 1080
+}
