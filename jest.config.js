@@ -6,6 +6,7 @@ module.exports = {
     '!src/pages/**',
     '!**/configuration/**',
   ],
+  setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   modulePaths: ['<rootDir>/src/'],
   testPathIgnorePatterns: [
     '/node_modules/',

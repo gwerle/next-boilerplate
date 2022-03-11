@@ -6,5 +6,7 @@
     "openMode": 3
   },
   "viewportWidth": 1920,
-  "viewportHeight": 1080
+  "viewportHeight": 1080,
+  "pageLoadTimeout": 500000,
+  "baseUrl": "http://localhost:3000"
 }

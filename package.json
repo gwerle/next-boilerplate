@@ -9,17 +9,24 @@
     "lint": "next lint",
     "test": "jest --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=25%",
-    "test:ci": "jest --runInBand"
+    "test:ci": "jest --runInBand",
+    "cypress:init": "./node_modules/.bin/cypress open",
+    "cypress:run": "./node_modules/.bin/cypress run",
+    "cypress:record": "./node_modules/.bin/cypress run --record --key project_key",
+    "cypress:ci": "start-server-and-test dev 3000 \"npm run cypress:run\""
   },
   "dependencies": {
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-react": "^7.16.7",
     "cypress": "^9.5.1",
     "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "start-server-and-test": "^1.14.0",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "7.16.0",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "13.5.0",
@@ -30,6 +37,7 @@
     "@types/uuid": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.10.0",
+    "babel-plugin-styled-components": "1.10.7",
     "eslint": "7.32.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.22.1",
